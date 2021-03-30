@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+.all {
+  display: inline-flexbox;
+  border: 12px black solid;
+  background-color: white;
+  max-height: 100%;
+}
+.container {
+  display: grid;
+  background-color: rgb(42, 45, 95);
+  margin: 10px;
+  padding: 10px;
+  color: white;
+  height: 100px;
+  align-content: center;
+}
+.container h2 {
+  font-size: 2rem;
+}
+.register {
+  display: block;
+  height: 400px;
+  width: 500px;
+  background-color: rgb(42, 45, 95);
+  align-items: top;
+  margin: 30px 600px;
+  padding: 10px;
+  color: white;
+}
+.register h3 {
+  font-size: 1.5rem;
+  position: relative;
+  font-family: sans-serif;
+  color: white;
+  align-items: center;
+}
+.register p {
+  margin: 10px;
+  color: white;
+  text-align: center;
+}
+.register a {
+  color: white;
+  align-items: center;
+  margin-left: 180px;
+}
+.message {
+  font-size: 1rem;
+  right: 0;
+}
+
+.input-field {
+  max-width: 380px;
+  float: left;
+  height: 55px;
+  background-color: white;
+  margin: 20px 120px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0rem;
+}
+.input-field i {
+  text-align: center;
+  line-height: 50px;
+  color: black;
+  font-size: 1.1rem;
+  margin: -10px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: black;
+}
+
+.input-field input::placeholder {
+  font-weight: 600;
+}
+.btn {
+  width: 130px;
+  height: 30px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: skyblue;
+  color: black;
+  text-transform: uppercase;
+  font-size: 5mm;
+  transition: 0.5s;
+  margin: 10px 180px;
+}
+.btn:hover {
+  background-color: rgb(189, 216, 226);
+}
+.footer {
+  display: block;
+  background-color: rgb(42, 45, 95);
+  margin: 10px;
+  padding: 20px;
+  height: 150px;
+  align-content: center;
+}
+.footer a {
+  color: white;
+  margin: 10px;
+  padding: 10px;
+}
+.footer a:hover {
+  color: yellow;
+}
+.footer p {
+  margin: 20px;
+  color: white;
+}
+.social-media {
+  justify-content: center;
+  display: flex;
+}
+
+.fa {
+  position: relative;
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 5px;
+  height: 30px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #55acee;
+  color: white;
+  position: relative;
+}
+
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}

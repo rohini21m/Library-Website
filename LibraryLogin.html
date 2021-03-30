@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content ="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type = "text/css" href = "style27.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>ONLINE LIBRARY</title>
+       
+</head>
+<body>
+        <div class="all">
+        <div class="container">
+            
+                <h2> ONLINE LIBRARY</h2>
+        </div>
+        <div class="register">
+           
+            <form id="form" action = "https://www.mcneese.edu/" method="GET">
+                <h3> LOGIN FORM</h3>
+            <div class="input-field">
+                <i class="fa fa-user"></i>
+                <input type="text" name="password" id="username" placeholder="username">
+            </div> 
+            <div class="input-field">
+                <i id="pass-status" class="fa fa-eye" aria-hidden="true" onClick="viewPassword()"></i>
+                
+                <input type="password" id="password-field" class="password" placeholder="password">
+                
+            </div>  
+                <button onclick ="submit()" type="submit" id="btn" class="solid btn">Submit</button>
+                 <a href =""> Forgot Password </a>
+
+                <p class="message"> Not  Registered ? Register here</p> 
+                <button  onclick = "register()" type="submit" class="solid btn">Register</button>
+            </form>
+           
+
+        </div>
+    
+    <div class="footer">
+                
+        <a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/libraryHome.html">HOME</a>
+        <a href=" file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/MyAccount.html">MY ACCOUNT</a>
+        
+       
+            <div class="social-media">
+                <p>Follow us on social media</p>
+                <a href="https://www.facebook.com/" class= "fa fa-facebook">
+                    
+                </a>
+                <a href="https://twitter.com/?lang=en" class="fa fa-twitter">
+                   
+                </a>
+                <a href="https://www.linkedin.com/feed/" class="fa fa-google">
+                    
+                </a>
+                <a href="https://www.google.com/" class="fa fa-linkedin">
+                    
+                </a>
+            
+            </div>
+          
+    </div>
+ 
+
+
+</div>
+</div>
+</body>
+<script>
+     var users = [
+
+{
+    username: 'Rohini Munnangi',
+    password : 'Rohini123'
+},
+  {
+    username: 'Nandini Munnangi',
+    password : 'nandu087'
+  },
+ 
+ { 
+      username: 'Kiran reddy',
+    password : 'kiran1995'
+ }
+
+]
+var admin=[
+    {
+        username: 'Rohini',
+        password : 'Chandu1997'
+    }
+]
+
+var username = document.getElementById('username');
+var form = document.getElementById('form');
+var passwordInput = document.getElementById('password-field');
+
+function submit(){
+    for(i=0;i<users.length;i++)
+    if (username.value==="users[i].username" && passwordInput.value==="users[i].password")
+    {
+        console.log("user" +  users[i].username + 'has login.');
+        href.location="https://www.mcneese.edu/";
+    } 
+    else(username.value==="admin[i].username" && passwordInput.value==="admin[i].password")
+    
+    {
+        console.log('admin login success');
+        href.location="www.facebook.com";
+
+    }
+}
+
+function viewPassword()
+{
+  var passwordInput = document.getElementById('password-field');
+  var passStatus = document.getElementById('pass-status');
+ 
+  if (passwordInput.type =='password'){
+    passwordInput.type='text';
+    passStatus.className='fa fa-eye-slash';
+    
+  }
+  else{
+    passwordInput.type='password';
+    passStatus.className='fa fa-eye';
+  }
+}
+
+    function register()
+    {
+    location.href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/libraryRegister.html";
+    }
+
+
+</script>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content ="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type = "text/css" href = "style25.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src= "library.js" >
+            var Acc = document.getElementsByClassName('MyAcc');
+Acc.addEventListener('click', function() {
+    e.preventDefault();
+ location.href = "file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/MyAccount.html";
+})
+        </script>
+       
+        <title>ONLINE LIBRARY</title>
+       
+      
+      
+</head>
+<body>
+  
+        <div class="all">
+        <div class="container">
+            
+                <h2> ONLINE LIBRARY</h2>
+                <div class="hi">
+                <button type="text" class="MyAcc">MY ACCOUNT</button>
+                <div class="nav">
+                 <button type="text" class="Home">Home</button>
+                 <button  onclick = " register()" type="text" class="Register">Register</button>
+                 <button type="text" class="About">About Us</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="row">
+            
+            <div class="left">
+                <h2>CATEGORY</h2>
+                <button class="accordion">MATHS</button>
+              
+                   <div class="panel">
+                 <p> ALGEBRA,INTEGRATIONS</p>
+                </div>
+
+
+                 <button class="accordion">PROGRAMMING</button>
+                   <div class="panel">
+                    <a href=" file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/LibraryBookInfo.html" ><p>JAVASCRIPT FOR DUMMIES,JAVASCRIPT & JQUERY</p></a>
+                   </div>
+
+                <button class="accordion">FICTION</button>
+                <div class="panel">
+                   <p>FOUNTAINHEAD,HARRY POTTER & CHAMBER OF SECRETS</p>
+  
+                </div>
+            </div>
+        
+
+        <div class="right">
+            <form id="form" action="/search/" method="GET">
+               
+                <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
+                <ul  type="none"  id="myMenu">
+                  <li class="hide"><a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/LibraryBookInfo.html">Javascript </a></li>
+                  <li class="hide"><a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/LibraryInfo1.html">Harry Potter</a></li>
+                  <li class="hide"><a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/LibraryBookInfo5.html">The Kind Diet</a></li>
+                  <li class="hide"><a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/LibraryInfo2.html">FountainHead</a></li>
+                  <li class="hide"><a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/LibraryInfo4.html">Climate Change</a></li>
+                  <li class="hide"><a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/libraryInfo3.html">Why We sleep</a></li>
+                 
+                </ul>
+              </div>
+               
+            </form>
+            
+               
+            
+        </div> 
+         
+    </div>
+    
+            <div class="footer">
+                
+                <a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/libraryHome.html">HOME</a>
+                <a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/MyAccount.html">MY ACCOUNT</a>
+                
+               
+                    <div class="social-media">
+                        <p>Follow us on social media</p>
+                        <a href="https://www.facebook.com/" class= "fa fa-facebook">
+                            
+                        </a>
+                        <a href="https://twitter.com/?lang=en" class="fa fa-twitter">
+                           
+                        </a>
+                        <a href="https://www.linkedin.com/feed/" class="fa fa-google">
+                            
+                        </a>
+                        <a href="https://www.google.com/" class="fa fa-linkedin">
+                            
+                        </a>
+                    
+                    </div>
+                  
+            </div>
+         
+
+   
+        </div>
+
+      
+
+</body>
+
+<Script>
+    function register()
+    {
+    location.href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/libraryRegister.html";
+    }
+</Script>
+</html>

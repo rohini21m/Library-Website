@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name ="viewport" content ="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type = "text/css" href = "style26.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>ONLINE LIBRARY</title>
+       <script src="libraryhome.js"></script>
+</head>
+<body>
+        <div class="all">
+        <div class="container">
+            
+                <h2> ONLINE LIBRARY</h2>
+        </div>
+        <div class="register">
+         
+            <form action =" LibraryHome.html" method="GET">
+                <h3> REGISTER FORM</h3>
+              <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="fname" placeholder="firstname" required>
+            </div> 
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="lname" placeholder="lastname" required>
+            </div> 
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="email" placeholder="email" required>
+            </div> 
+            <div class="input-field">
+                <i class="fa fa-lock"></i>
+                <input type="password" id="password" placeholder="password" required>
+                
+            </div>  
+                <button type="submit" class="solid btn">Submit</button>
+              
+
+
+
+            </form>
+
+
+        </div>
+    
+    <div class="footer">
+                
+        <a href="file:///C:/Users/Rohinimunnangi/Desktop/HTML%20AND%20CSS/libraryHome.html">HOME</a>
+        <a href="">MY ACCOUNT</a>
+        
+       
+            <div class="social-media">
+                <p>Follow us on social media</p>
+                <a href="https://www.facebook.com/" class= "fa fa-facebook">
+                    
+                </a>
+                <a href="https://twitter.com/?lang=en" class="fa fa-twitter">
+                   
+                </a>
+                <a href="https://www.linkedin.com/feed/" class="fa fa-google">
+                    
+                </a>
+                <a href="https://www.google.com/" class="fa fa-linkedin">
+                    
+                </a>
+            
+            </div>
+          
+    </div>
+ 
+
+
+</div>
+</div>
+</body>
+<script>
+   
+    let form = document.getElementById('form');
+    let fname = document.getElementById('fname');
+    let lname = document.getElementById('lname');
+    let email = document.getElementById('email');
+    let password = document.getElementById('password');
+    
+    let  btn = document.getElementsByClassName('solid btn');
+    btn.addEventListener('submit',()=>{
+        if(fname.value==="" && lname===""){
+            console.log('name is entered');
+
+        }
+        if(email.value===""){
+            console.log('email is entered');
+            
+        }
+        else(email.value===null)
+        { 
+            alert('incorrect email id');
+
+        }
+        if(password.length<=8){
+        conosle.log('password is entered');
+        }
+        if(password.length>=8){
+            alert('incorrect password');
+        }
+
+   
+    
+    
+
+});
+</script>
+</html>
